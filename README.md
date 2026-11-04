@@ -12,6 +12,7 @@ Deploy the Worker as an **ES module**, with a Workers AI binding named **AI**. T
 
 ## Use
 
+- Full screen: use the button in the top-right corner to enter or leave full screen. Escape also exits. If an embedded browser blocks full screen, open the site in a regular browser tab.
 - Talk: the opening view is **Talk with Emily**. Write a message, tap a suggestion, or press the microphone for one message. Turn off **Hear replies** for a quiet text conversation.
 - Conversation: press **Start conversation** and allow the microphone. Speak naturally; Emily waits about 1.5 seconds after detected speech stops, collects final recognition, and then answers. There is no Finish-speaking button. The microphone resumes after her whole reply finishes. Press **End conversation** to stop. This is turn-by-turn conversation, not simultaneous speech or interruption detection.
 - Transcript: recognized words appear while speaking. The page keeps the full recognized conversation and Emily's replies without the old 25-message cutoff. **Download full transcript** saves a text copy; download before closing or refreshing. Canceled recognized speech is retained and marked as not sent. No audio recording or persistent transcript storage is created. Automatic recognition can still mishear or miss words, especially overlapping speakers.
