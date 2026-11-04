@@ -36,6 +36,79 @@ function audioSession({ fetchAudio } = {}) {
 }
 const audioResponse=()=>new Response(new Uint8Array([73,68,51]),{headers:{'Content-Type':'audio/mpeg'}});
 const longReading=()=>('A quiet morning opened over Amherst. The garden held its small surprises.\n\n').repeat(65)+'The final words must be heard.';
+function biographySession(options){
+ const c=audioSession(options);
+ c.context.document.querySelectorAll=selector=>selector==='#lifePanel .biography p'
+  ? [{textContent:'Emily lived in Amherst.'},{textContent:'Her garden inspired her poems.'}] : [];
+ c.context.document.addEventListener=()=>{};
+ c.run('connectWorker=async()=>true;init();switchTab("life");');
+ return c;
+}
+
+test('the biography button retries blocked playback without requesting the audio again',async()=>{
+ const c=biographySession();let attempts=0;
+ c.context.Audio=class extends c.Audio{
+  async play(){if(++attempts===1)throw Object.assign(Error('Tap required'),{name:'NotAllowedError'});return super.play();}
+ };
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.requests.length,1);
+ assert.equal(c.played.length,0);
+ assert.match(c.get('lifeStatus').textContent,/Tap Play her life/);
+ assert.match(c.get('lifeReadBtn').textContent,/Play her life/);
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.requests.length,1);
+ assert.equal(c.played.length,1);
+ assert.match(c.get('lifeStatus').textContent,/Emily is speaking/);
+ await c.played[0].onended();
+ assert.equal(c.get('lifeStatus').textContent,'Biography reading complete.');
+});
+
+test('biography pause and resume reuse the same reading and preserve all paragraphs',async()=>{
+ const c=biographySession();
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.requests[0].text,'Emily lived in Amherst.\n\nHer garden inspired her poems.');
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.played[0].paused,true);
+ assert.match(c.get('lifeReadBtn').textContent,/Resume reading/);
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.requests.length,1);
+ assert.equal(c.played[0],c.played[1]);
+ assert.match(c.get('lifeReadBtn').textContent,/Pause reading/);
+});
+
+test('biography voice failures are visible on Her life and the same button can retry',async()=>{
+ const c=biographySession({fetchAudio:count=>count===1?new Response('Unavailable',{status:503}):audioResponse()});
+ await c.get('lifeReadBtn').handlers.click();
+ assert.match(c.get('lifeStatus').textContent,/Emily’s voice is unavailable/);
+ assert.equal(c.played.length,0);
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.played.length,1);
+ assert.match(c.get('lifeStatus').textContent,/Emily is speaking/);
+});
+
+test('repeated biography clicks while preparing do not cancel or request another reading',async()=>{
+ let resolveAudio;
+ const c=biographySession({fetchAudio:()=>new Promise(resolve=>{resolveAudio=resolve;})});
+ const pending=c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.get('lifeReadBtn').disabled,true);
+ assert.match(c.get('lifeReadBtn').textContent,/Preparing voice/);
+ await c.get('lifeReadBtn').handlers.click();
+ assert.equal(c.requests.length,1);
+ assert.equal(c.requests[0].signal.aborted,false);
+ resolveAudio(audioResponse());await pending;
+ assert.equal(c.get('lifeReadBtn').disabled,false);
+ assert.equal(c.played.length,1);
+});
+
+test('waiting for the initial voice connection cannot start a canceled biography reading',async()=>{
+ const c=biographySession();let resolveConnection;
+ c.context.pendingConnection=new Promise(resolve=>{resolveConnection=resolve;});
+ c.run('aiOnline=false;aiCheck=pendingConnection;');
+ const pending=c.get('lifeReadBtn').handlers.click();
+ c.run('stopSpeech();aiOnline=true;');resolveConnection(true);await pending;
+ assert.equal(c.requests.length,0);
+ assert.equal(c.played.length,0);
+});
 
 test('long speech chunks preserve every word and respect the request limit',()=>{
  const c=audioSession();

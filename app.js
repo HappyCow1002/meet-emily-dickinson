@@ -22,7 +22,7 @@ const poems=window.emilyPoemLibrary||[
 const workerURL = 'https://emily-dickinson-ai.jedrek1002.workers.dev';
 let aiOnline=false, aiBusy=false, aiCheck=null, conversationHistory=[], lastReply='';
 const transcript=[], MAX_MESSAGE_CHARS=12000;
-let currentAudio=null, currentAudioObjectURL=null, speechRun=0, audioReadyToPlay=false, speechRequest=null;
+let currentAudio=null, currentAudioObjectURL=null, currentAudioKind=null, speechRun=0, audioReadyToPlay=false, speechRequest=null;
 let currentPoem=0, activeTab='talk', speaking=false, speakingKind=null, chosenVoice='';
 let libraryUI=null;
 let recognition=null, recognitionRunning=false, live=false, listenTimer=null, liveTimer=null, noSpeech=0;
@@ -58,7 +58,7 @@ function chatBody(question){
  return body;
 }
 function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function status(text){$('readStatus').textContent=text;$('voiceStatus').textContent=text;}
+function status(text){$('readStatus').textContent=text;$('voiceStatus').textContent=text;if($('lifeStatus'))$('lifeStatus').textContent=text;}
 function displayPoem(){const p=poems[currentPoem];$('poemText').innerHTML=p.lines.map((line,i)=>line?`<div class="poem-line" data-idx="${i}">${escapeHTML(line)}</div>`:'<div class="poem-break"></div>').join('');$('portraitTitle').textContent=p.title;document.querySelectorAll('.poem-tile').forEach(el=>el.classList.toggle('selected',el.dataset.poem===p.id));libraryUI?.refreshSelection();}
 function choosePoem(i){endLive();stopSpeech();currentPoem=i;displayPoem();switchTab('read');}
 function switchTab(tab){
@@ -72,8 +72,9 @@ function switchTab(tab){
  $('portraitTitle').textContent=tab==='talk'?'A conversation with Emily':poems[currentPoem].title;
  if(!speaking)$('portraitStatus').textContent=tab==='talk'?'Ready to talk with you':'Ready to share a poem';
  if(tab==='talk'&&changed)status('Start a voice conversation, or write to Emily below.');
+ if(tab==='life'&&changed)status('Press Hear her life to listen.');
 }
-function setSpeaking(on,kind){speaking=on;speakingKind=on?kind:null;$('portrait').classList.toggle('speaking',on);$('portraitStatus').textContent=on?(kind==='poem'?'Reading her poetry…':'Emily is speaking…'):activeTab==='talk'?'Ready to talk with you':'Ready to share a poem';$('playBtn').textContent=on&&kind==='poem'?'Ⅱ Pause reading':'▶ Hear the poem';}
+function setSpeaking(on,kind){speaking=on;speakingKind=on?kind:null;$('portrait').classList.toggle('speaking',on);$('portraitStatus').textContent=on?(kind==='poem'?'Reading her poetry…':'Emily is speaking…'):activeTab==='talk'?'Ready to talk with you':'Ready to share a poem';$('playBtn').textContent=on&&kind==='poem'?'Ⅱ Pause reading':'▶ Hear the poem';$('lifeReadBtn').disabled=false;$('lifeReadBtn').textContent=on&&kind==='life'?'Ⅱ Pause reading':'▶ Hear her life';}
 function stopListening({preserve=true}={}){
  const pending=recognizedSpeech();
  if(preserve&&pending.trim()&&typeof preserveUnsentSpeech==='function')preserveUnsentSpeech(pending);
@@ -93,9 +94,10 @@ function stopSpeech(){
 }
 function releaseCurrentAudio(){
  if(currentAudio){const a=currentAudio;currentAudio=null;a.onended=a.onerror=a.onplay=a.onpause=null;a.pause();a.removeAttribute('src');a.load();}
+ currentAudioKind=null;
  if(currentAudioObjectURL){URL.revokeObjectURL(currentAudioObjectURL);currentAudioObjectURL=null;}
 }
-function speechFinished(){stopSpeech();status(live?'Your turn. Listening…':'Ready for your next question.');maybeListen();}
+function speechFinished(){const kind=speakingKind;stopSpeech();status(kind==='life'?'Biography reading complete.':live?'Your turn. Listening…':'Ready for your next question.');maybeListen();}
 function maybeListen(){clearTimeout(listenTimer);if(live&&!aiBusy&&!speaking&&!audioReadyToPlay&&!document.hidden){const generation=captureGeneration;listenTimer=setTimeout(()=>{listenTimer=null;if(live&&generation===captureGeneration&&!document.hidden)startListening();},650);}}
 function endLive(message='Voice conversation ended. You can keep typing.'){
  live=false;clearTimeout(liveTimer);stopListening();$('liveBtn').textContent='🎙 Start conversation';$('liveBtn').setAttribute('aria-pressed','false');status(message);
@@ -198,7 +200,10 @@ async function playCurrentAudio(kind='chat'){
  catch(error){
   if(run!==speechRun)return false;
   if(error?.name==='NotAllowedError'){
-   audioReadyToPlay=true;setSpeaking(false);status(kind==='poem'?'Voice ready. Tap Hear the poem again.':'Voice ready. Tap Hear Emily’s last answer.');return false;
+   audioReadyToPlay=true;setSpeaking(false);
+   if(kind==='life'){$('lifeReadBtn').textContent='▶ Play her life';status('Voice ready. Tap Play her life to start playback.');}
+   else status(kind==='poem'?'Voice ready. Tap Hear the poem again.':'Voice ready. Tap Hear Emily’s last answer.');
+   return false;
   }
   return naturalVoiceUnavailable();
  }
@@ -225,13 +230,16 @@ function splitSpeechText(text,maximum=1400){
 async function express(text,kind='chat'){
  stopListening();stopSpeech();
  if(preferredSpeechMode()==='device')return say(text,kind);
+ const run=speechRun;
+ if(!aiOnline&&aiCheck){status('Connecting to Emily’s voice…');await aiCheck;if(run!==speechRun)return false;}
  if(!aiOnline)return naturalVoiceUnavailable();
- const run=speechRun, chunks=splitSpeechText(text).filter(part=>part.trim());
+ const chunks=splitSpeechText(text).filter(part=>part.trim());
  if(!chunks.length)return false;
  const playChunk=async index=>{
   if(run!==speechRun)return false;
   releaseCurrentAudio();audioReadyToPlay=false;
   setSpeaking(true,kind);status('Preparing Emily’s natural voice…');
+  if(kind==='life'){$('lifeReadBtn').disabled=true;$('lifeReadBtn').textContent='Preparing voice…';}
   const controller=new AbortController();speechRequest=controller;const timeout=setTimeout(()=>controller.abort(),25000);
   try{
    const res=await fetch(workerURL+'/api/speak',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:chunks[index]}),signal:controller.signal});
@@ -239,7 +247,7 @@ async function express(text,kind='chat'){
    if(!res.ok)throw Error('Voice unavailable');
    const blob=await res.blob();if(run!==speechRun)return false;
    if(!blob.type.startsWith('audio/')||!blob.size)throw Error('Invalid audio');
-   const audio=new Audio();currentAudio=audio;currentAudioObjectURL=URL.createObjectURL(blob);audio.src=currentAudioObjectURL;
+   const audio=new Audio();currentAudio=audio;currentAudioKind=kind;currentAudioObjectURL=URL.createObjectURL(blob);audio.src=currentAudioObjectURL;
    audio.playbackRate=Number($('rateRange').value);audio.preload='auto';
    audio.onplay=()=>{if(run===speechRun&&currentAudio===audio){audioReadyToPlay=false;setSpeaking(true,kind);status('Emily is speaking…');}};
    audio.onpause=()=>{if(currentAudio===audio&&audio.currentTime<audio.duration)status('Paused');};
@@ -251,7 +259,7 @@ async function express(text,kind='chat'){
    audio.onerror=()=>{if(run===speechRun&&currentAudio===audio)naturalVoiceUnavailable();};
    return await playCurrentAudio(kind);
   }catch{if(run!==speechRun)return false;return naturalVoiceUnavailable();}
-  finally{clearTimeout(timeout);if(speechRequest===controller)speechRequest=null;}
+  finally{clearTimeout(timeout);if(speechRequest===controller)speechRequest=null;if(run===speechRun&&kind==='life')$('lifeReadBtn').disabled=false;}
  };
  return await playChunk(0);
 }
@@ -280,13 +288,25 @@ function say(text,kind='chat'){
  synth.speak(utterance);return true;
 }
 function readPoem(){
- if(currentAudio&&audioReadyToPlay){playCurrentAudio('poem');return;}
+ if(currentAudio&&currentAudioKind==='poem'&&audioReadyToPlay){playCurrentAudio('poem');return;}
  if(speaking&&speakingKind==='poem'){
   if(currentAudio){if(currentAudio.paused)playCurrentAudio('poem');else{currentAudio.pause();$('playBtn').textContent='▶ Resume reading';}}
   else if(synth?.paused){synth.resume();$('playBtn').textContent='Ⅱ Pause reading';}else{synth?.pause();$('playBtn').textContent='▶ Resume reading';}
   return;
  }
  const p=poems[currentPoem];express(p.lines.map(l=>l||' ').join('\n'),'poem');
+}
+function readLife(){
+ if(currentAudio&&currentAudioKind==='life'&&audioReadyToPlay)return playCurrentAudio('life');
+ if(speaking&&speakingKind==='life'){
+  if(speechRequest)return;
+  if(currentAudio){if(currentAudio.paused)return playCurrentAudio('life');currentAudio.pause();$('lifeReadBtn').textContent='▶ Resume reading';}
+  else if(synth?.paused){synth.resume();$('lifeReadBtn').textContent='Ⅱ Pause reading';}
+  else{synth?.pause();$('lifeReadBtn').textContent='▶ Resume reading';}
+  return;
+ }
+ const text=Array.from(document.querySelectorAll('#lifePanel .biography p')).map(paragraph=>paragraph.textContent).join('\n\n');
+ return express(text,'life');
 }
 function addBubble(who,text,source='prepared'){
  const el=document.createElement('div');el.className='bubble '+who;
@@ -365,7 +385,7 @@ function init(){
  else{$('poemGrid').innerHTML=poems.map((p,i)=>`<button class="poem-tile" data-poem="${p.id}" data-idx="${i}"><strong>${escapeHTML(p.short)}</strong><span>${escapeHTML(p.mood)} →</span></button>`).join('');document.querySelectorAll('.poem-tile').forEach(el=>el.addEventListener('click',()=>choosePoem(Number(el.dataset.idx))));$('poemCount').textContent='Search is unavailable. You can still choose a poem below.';}
  document.querySelectorAll('.tab').forEach(el=>el.addEventListener('click',()=>switchTab(el.dataset.tab)));
  $('playBtn').addEventListener('click',readPoem);$('stopBtn').addEventListener('click',()=>{stopSpeech();status('Reading stopped.');});$('otherPoemsBtn').addEventListener('click',()=>switchTab('library'));$('lifeTalkBtn').addEventListener('click',()=>{switchTab('talk');$('questionInput').focus();});
- $('lifeReadBtn').addEventListener('click',()=>{const text=Array.from(document.querySelectorAll('#lifePanel .biography p')).map(paragraph=>paragraph.textContent).join('\n\n');express(text,'life');});
+ $('lifeReadBtn').addEventListener('click',readLife);
  $('lifeStopBtn').addEventListener('click',()=>{stopSpeech();status('Reading stopped.');});
  $('chatForm').addEventListener('submit',e=>{e.preventDefault();const q=$('questionInput').value.trim();if(q&&!aiBusy){$('questionInput').value='';answerQuestion(q);}});
  document.querySelectorAll('.chip').forEach(el=>el.addEventListener('click',()=>answerQuestion(el.textContent)));
