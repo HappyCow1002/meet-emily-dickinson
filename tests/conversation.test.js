@@ -219,7 +219,7 @@ test('continuous speech revises interim results and sends all segments after a n
   speechResults(r, [['I would like', true], [' to share a thought.', false]], 1);
   assert.equal(c.get('listeningTranscript').textContent, 'I would like to share a thought.');
   assert.equal(c.sent.length, 0);
-  assert.equal([...c.timers.values()].filter(t => t.delay === 1500).length, 0);
+  assert.equal([...c.timers.values()].filter(t => t.delay === 1500).length, 1);
   // A removal-only event discards the superseded interim suffix.
   speechResults(r, [['I would like', true]], 1);
   assert.equal(c.get('listeningTranscript').textContent, 'I would like');
@@ -235,6 +235,46 @@ test('separate recognition results keep word boundaries without supplied whitesp
   assert.equal(c.get('listeningTranscript').textContent,'We have two questions.');
   r.onspeechend();fireTimer(c,1500);
   assert.deepEqual(c.sent,['We have two questions.']);
+});
+
+test('a spoken turn sends automatically when the browser never emits speechend', () => {
+  const c=voiceCapture(), r=c.current();
+  r.onspeechstart();
+  speechResults(r,[['Hello Emily. How are you?',false]]);
+  fireTimer(c,1500);
+  assert.deepEqual(c.sent,['Hello Emily. How are you?']);
+  assert.equal(r.stops,1);
+});
+
+test('unchanged recognition updates do not postpone the automatic reply', () => {
+  const c=voiceCapture(), r=c.current();
+  r.onspeechstart();
+  speechResults(r,[['Tell us about your garden.',false]]);
+  const pause=c.run('captureTimer');
+  speechResults(r,[['Tell us about your garden.',false]]);
+  speechResults(r,[['Tell us about your garden.',true]]);
+  assert.equal(c.run('captureTimer'),pause);
+  fireTimer(c,1500);
+  assert.deepEqual(c.sent,['Tell us about your garden.']);
+});
+
+test('Start conversation supports two spoken turns and spoken replies without Send', async () => {
+  const c=classroom();
+  c.get('liveBtn').handlers.click();
+  let r=c.run('recognition');r.onspeechstart();
+  speechResults(r,[['Hello Emily.',false]]);fireTimer(c,1500);
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(c.played.length,1);
+  assert.equal(c.run('recognitionRunning'),false);
+  await c.played[0].onended();fireTimer(c,650);
+  assert.equal(c.run('recognitionRunning'),true);
+  r=c.run('recognition');r.onspeechstart();
+  speechResults(r,[['What was your dog called?',false]]);fireTimer(c,1500);
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(c.played.length,2);
+  assert.deepEqual(Array.from(c.run('transcript.filter(entry=>entry.role==="you").map(entry=>entry.text)')),
+    ['Hello Emily.','What was your dog called?']);
+  assert.equal(c.run('live'),true);
 });
 
 test('a renewed phrase or newer interim invalidates earlier pause callbacks', () => {

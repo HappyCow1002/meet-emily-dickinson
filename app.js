@@ -27,7 +27,7 @@ let currentPoem=0, activeTab='talk', speaking=false, speakingKind=null, chosenVo
 let libraryUI=null;
 let recognition=null, recognitionRunning=false, live=false, listenTimer=null, liveTimer=null, noSpeech=0;
 let recognitionFactory=null, recognitionStarting=false, recognitionSession=0;
-let captureActive=false, captureGeneration=0, capturePauseRevision=0, captureTimer=null, captureFinalTimer=null, captureFinishing=false, speechActive=false;
+let captureActive=false, captureGeneration=0, capturePauseRevision=0, captureTimer=null, captureFinalTimer=null, captureFinishing=false;
 let capturedSegments=[], recognitionSegments=[];
 const TURN_PAUSE_MS=1500;
 let turnRun=0, chatRequest=null;
@@ -79,7 +79,7 @@ function stopListening({preserve=true}={}){
  const pending=recognizedSpeech();
  if(preserve&&pending.trim()&&typeof preserveUnsentSpeech==='function')preserveUnsentSpeech(pending);
  clearTimeout(listenTimer);clearTimeout(captureTimer);clearTimeout(captureFinalTimer);listenTimer=captureTimer=captureFinalTimer=null;
- captureActive=false;captureGeneration++;capturePauseRevision++;recognitionSession++;speechActive=false;
+ captureActive=false;captureGeneration++;capturePauseRevision++;recognitionSession++;
  captureFinishing=false;
  capturedSegments=[];recognitionSegments=[];
  const wasListening=recognitionRunning||recognitionStarting;recognitionRunning=recognitionStarting=false;
@@ -116,7 +116,7 @@ function sendRecognizedSpeech(generation){
  stopListening({preserve:false});answerQuestion(words);
 }
 function finishRecognizedSpeech(generation){
- if(generation!==captureGeneration||!canCaptureSpeech()||speechActive||captureFinishing)return;
+ if(generation!==captureGeneration||!canCaptureSpeech()||captureFinishing)return;
  captureFinishing=true;clearTimeout(listenTimer);listenTimer=null;
  status('Waiting for your final words…');
  if(recognitionRunning||recognitionStarting){
@@ -127,13 +127,13 @@ function finishRecognizedSpeech(generation){
 function scheduleSpeechCommit(){
  const pauseRevision=++capturePauseRevision;
  clearTimeout(captureTimer);captureTimer=null;
- if(!canCaptureSpeech()||captureFinishing||speechActive||!recognizedSpeech().trim())return;
+ if(!canCaptureSpeech()||captureFinishing||!recognizedSpeech().trim())return;
  const generation=captureGeneration;
- status('Waiting for a pause… Keep speaking if you have more to say.');
+ status('Listening… I’ll reply after a short pause.');
  captureTimer=setTimeout(()=>{
   if(pauseRevision!==capturePauseRevision)return;
   captureTimer=null;
-  if(generation!==captureGeneration||!canCaptureSpeech()||speechActive)return;
+  if(generation!==captureGeneration||!canCaptureSpeech())return;
   finishRecognizedSpeech(generation);
  },TURN_PAUSE_MS);
 }
@@ -155,21 +155,24 @@ function createRecognition(){
  const current=new recognitionFactory();let emptyReported=false;
  current.lang='en-US';current.continuous=true;current.interimResults=true;current.maxAlternatives=1;
  const active=()=>session===recognitionSession&&generation===captureGeneration&&captureActive;
- current.onstart=()=>{if(!active())return;recognitionStarting=false;recognitionRunning=true;status('Listening… Take your time.');};
- current.onspeechstart=()=>{if(!active()||captureFinishing)return;speechActive=true;capturePauseRevision++;clearTimeout(captureTimer);captureTimer=null;status('Listening… Keep speaking.');};
- current.onspeechend=()=>{if(!active()||captureFinishing)return;speechActive=false;scheduleSpeechCommit();};
+ current.onstart=()=>{if(!active())return;recognitionStarting=false;recognitionRunning=true;status('Listening… Speak to Emily, then pause briefly for her reply.');};
+ current.onspeechstart=()=>{if(!active()||captureFinishing)return;capturePauseRevision++;clearTimeout(captureTimer);captureTimer=null;status('Listening… Keep speaking.');};
+ current.onspeechend=()=>{if(!active()||captureFinishing)return;if(!captureTimer)scheduleSpeechCommit();};
  current.onresult=event=>{
   if(!active()||!canCaptureSpeech())return;
   const results=event.results;if(!results)return;
+  const previous=recognizedSpeech();
   const first=Number.isInteger(event.resultIndex)?event.resultIndex:0;
   for(let i=first;i<results.length;i++)recognitionSegments[i]={text:results[i]?.[0]?.transcript||'',final:!!results[i]?.isFinal};
   recognitionSegments.length=results.length;noSpeech=0;
   showRecognizedSpeech();
-  if(!captureFinishing){scheduleSpeechCommit();if(speechActive)status('Listening… Keep speaking.');}
+  // Some browsers keep a continuous speech session open without speechend.
+  // Only new or corrected words restart the pause; duplicate interim results do not.
+  if(!captureFinishing&&(recognizedSpeech()!==previous||!captureTimer))scheduleSpeechCommit();
  };
  current.onend=()=>{
   if(!active())return;
-  recognitionStarting=recognitionRunning=false;speechActive=false;$('micBtn').classList.remove('active');
+  recognitionStarting=recognitionRunning=false;$('micBtn').classList.remove('active');
   const segment=joinSpeechSegments(recognitionSegments.map(result=>result?.text||''));
   if(segment)capturedSegments.push(segment);recognitionSegments=[];showRecognizedSpeech();
   if(captureFinishing){sendRecognizedSpeech(generation);return;}
