@@ -1,0 +1,7 @@
+{
+  "name": "emily-dickinson-ai",
+  "main": "emily-worker.js",
+  "compatibility_date": "2026-11-04",
+  "workers_dev": true,
+  "ai": { "binding": "AI" }
+}

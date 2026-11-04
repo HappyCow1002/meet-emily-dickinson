@@ -1,0 +1,10 @@
+{
+  "name": "meet-emily-dickinson",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check emily-worker.js && node --check app.js"
+  }
+}
