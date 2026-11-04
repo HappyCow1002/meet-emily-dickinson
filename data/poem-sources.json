@@ -1,0 +1,2715 @@
+{
+  "title": "Poems by Emily Dickinson, Three Series, Complete",
+  "author": "Emily Dickinson (1830–1886)",
+  "editions": [
+    {
+      "series": "First Series",
+      "year": "1890",
+      "editors": [
+        "Mabel Loomis Todd",
+        "T. W. Higginson"
+      ],
+      "publisher": "Roberts Brothers, Boston"
+    },
+    {
+      "series": "Second Series",
+      "year": "1891",
+      "editors": [
+        "T. W. Higginson",
+        "Mabel Loomis Todd"
+      ],
+      "publisher": "Roberts Brothers, Boston"
+    },
+    {
+      "series": "Third Series",
+      "year": "1896",
+      "editors": [
+        "Mabel Loomis Todd"
+      ],
+      "publisher": "Roberts Brothers, Boston"
+    }
+  ],
+  "poem_count": 444,
+  "scope": "444 poems from the three early published series; not the full modern catalog of 1,789 poems. These historical editions contain editorial changes.",
+  "source": "https://www.gutenberg.org/ebooks/12242",
+  "source_html": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
+  "source_text": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt",
+  "retrieved_at": "2026-11-04",
+  "sha256_source_html": "c77b351bacc2cb6fa66ed6adcb1c848646c7a053024024ab4be0727634399d46",
+  "rights": {
+    "text": "Public domain in the USA, as recorded by Project Gutenberg ebook12242.",
+    "edition_note": "Only text from the early published editions is included. No Johnson1955 or Franklin1998 text is imported.",
+    "attribution": "Emily Dickinson; early editors Mabel Loomis Todd and Thomas Wentworth Higginson; Project Gutenberg transcription produced by Jim Tinsley.",
+    "gutenberg_license": "https://www.gutenberg.org/policy/license.html",
+    "references": [
+      "https://www.emilydickinsonmuseum.org/emily-dickinson/poetry/tips-for-reading/major-editions-of-dickinsons-writings/",
+      "https://www.emilydickinsonmuseum.org/emily-dickinson/poetry/copyright-issues-and-dickinsons-work/"
+    ]
+  },
+  "poems": [
+    {
+      "id": "pg-this-is-my-letter-to-the-world",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#This_is_my_letter_to_the_world",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-success-is-counted-sweetest",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Success_is_counted_sweetest",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-our-share-of-night-to-bear",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Our_share_of_night_to_bear",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-soul-wilt-thou-toss-again",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Soul_wilt_thou_toss_again",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-t-is-so-much-joy-t-is-so-much-joy",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_is_so_much_joy_T_is_so_much_joy",
+      "edition": "1890",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-glee-the-great-storm-is-over",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Glee_The_great_storm_is_over",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-if-i-can-stop-one-heart-from-breaking",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_I_can_stop_one_heart_from_breaking",
+      "edition": "1890",
+      "verse_lines": 7
+    },
+    {
+      "id": "pg-within-my-reach",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Within_my_reach",
+      "edition": "1890",
+      "verse_lines": 9
+    },
+    {
+      "id": "pg-a-wounded-deer-leaps-highest",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_wounded_deer_leaps_highest",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-heart-asks-pleasure-first",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_heart_asks_pleasure_first",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-precious-mouldering-pleasure-t-is",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_precious_mouldering_pleasure_t_is",
+      "edition": "1890",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-much-madness-is-divinest-sense",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Much_madness_is_divinest_sense",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-asked-no-other-thing",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_asked_no_other_thing",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-soul-selects-her-own-society",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_soul_selects_her_own_society",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-some-things-that-fly-there-be",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Some_things_that_fly_there_be",
+      "edition": "1890",
+      "verse_lines": 9
+    },
+    {
+      "id": "pg-i-know-some-lonely-houses-off-the-road",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_know_some_lonely_houses_off_the_road",
+      "edition": "1890",
+      "verse_lines": 40
+    },
+    {
+      "id": "pg-to-fight-aloud-is-very-brave",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_fight_aloud_is_very_brave",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-when-night-is-almost-done",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#When_night_is_almost_done",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-read-sweet-how-others-strove",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Read_sweet_how_others_strove",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-pain-has-an-element-of-blank",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Pain_has_an_element_of_blank",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-taste-a-liquor-never-brewed",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_taste_a_liquor_never_brewed",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-he-ate-and-drank-the-precious-words",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#He_ate_and_drank_the_precious_words",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-had-no-time-to-hate-because",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_had_no_time_to_hate_because",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-t-was-such-a-little-little-boat",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_was_such_a_little_little_boat",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-whether-my-bark-went-down-at-sea",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Whether_my_bark_went_down_at_sea",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-belshazzar-had-a-letter",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Belshazzar_had_a_letter",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-brain-within-its-groove",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_brain_within_its_groove",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-mine-by-the-right-of-the-white-election",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Mine_by_the_right_of_the_white_election",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-you-left-me-sweet-two-legacies",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#You_left_me_sweet_two_legacies",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-alter-when-the-hills-do",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Alter_When_the_hills_do",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-elysium-is-as-far-as-to",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Elysium_is_as_far_as_to",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-doubt-me-my-dim-companion",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Doubt_me_my_dim_companion",
+      "edition": "1890",
+      "verse_lines": 17
+    },
+    {
+      "id": "pg-if-you-were-coming-in-the-fall",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_you_were_coming_in_the_fall",
+      "edition": "1890",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-i-hide-myself-within-my-flower",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_hide_myself_within_my_flower",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-that-i-did-always-love",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#That_I_did_always_love",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-have-you-got-a-brook-in-your-little-heart",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Have_you_got_a_brook_in_your_little_heart",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-as-if-some-little-arctic-flower",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#As_if_some_little_Arctic_flower",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-my-river-runs-to-thee",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_river_runs_to_thee_",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-cannot-live-with-you",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_cannot_live_with_you",
+      "edition": "1890",
+      "verse_lines": 51
+    },
+    {
+      "id": "pg-there-came-a-day-at-summers-full",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_came_a_day_at_summers_full",
+      "edition": "1890",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-im-ceded-ive-stopped-being-theirs",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Im_ceded_Ive_stopped_being_theirs",
+      "edition": "1890",
+      "verse_lines": 19
+    },
+    {
+      "id": "pg-t-was-a-long-parting-but-the-time",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_was_a_long_parting_but_the_time",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-im-wife-ive-finished-that",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Im_wife_Ive_finished_that",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-she-rose-to-his-requirement-dropped",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_rose_to_his_requirement_dropped",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-come-slowly-eden",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Come_slowly_Eden",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-new-feet-within-my-garden-go",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#New_feet_within_my_garden_go",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-pink-small-and-punctual",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Pink_small_and_punctual",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-murmur-of-a-bee",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_murmur_of_a_bee",
+      "edition": "1890",
+      "verse_lines": 15
+    },
+    {
+      "id": "pg-perhaps-youd-like-to-buy-a-flower",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Perhaps_youd_like_to_buy_a_flower",
+      "edition": "1890",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-the-pedigree-of-honey",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_pedigree_of_honey",
+      "edition": "1890",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-some-keep-the-sabbath-going-to-church",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Some_keep_the_Sabbath_going_to_church",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-bee-is-not-afraid-of-me",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_bee_is_not_afraid_of_me",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-some-rainbow-coming-from-the-fair",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Some_rainbow_coming_from_the_fair",
+      "edition": "1890",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-the-grass-so-little-has-to-do",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_grass_so_little_has_to_do",
+      "edition": "1890",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-a-little-road-not-made-of-man",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_little_road_not_made_of_man",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-drop-fell-on-the-apple-tree",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_drop_fell_on_the_apple_tree",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-a-something-in-a-summers-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_something_in_a_summers_day",
+      "edition": "1890",
+      "verse_lines": 33
+    },
+    {
+      "id": "pg-this-is-the-land-the-sunset-washes",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#This_is_the_land_the_sunset_washes",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-there-is-a-flower-that-bees-prefer",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_is_a_flower_that_bees_prefer",
+      "edition": "1890",
+      "verse_lines": 32
+    },
+    {
+      "id": "pg-like-trains-of-cars-on-tracks-of-plush",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Like_trains_of_cars_on_tracks_of_plush",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-presentiment-is-that-long-shadow-on-the-lawn",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Presentiment_is_that_long_shadow_on_the_lawn",
+      "edition": "1890",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-as-children-bid-the-guest-good-night",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#As_children_bid_the_guest_good-night",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-angels-in-the-early-morning",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Angels_in_the_early_morning",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-so-bashful-when-i-spied-her",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#So_bashful_when_I_spied_her",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-it-makes-no-difference-abroad",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_makes_no_difference_abroad",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-mountain-sat-upon-the-plain",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_mountain_sat_upon_the_plain",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-ill-tell-you-how-the-sun-rose",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Ill_tell_you_how_the_sun_rose",
+      "edition": "1890",
+      "verse_lines": 17
+    },
+    {
+      "id": "pg-the-butterflys-assumption-gown",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_butterflys_assumption-gown",
+      "edition": "1890",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-of-all-the-sounds-despatched-abroad",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Of_all_the_sounds_despatched_abroad",
+      "edition": "1890",
+      "verse_lines": 21
+    },
+    {
+      "id": "pg-apparently-with-no-surprise",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Apparently_with_no_surprise",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-t-was-later-when-the-summer-went",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_was_later_when_the_summer_went",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-these-are-the-days-when-birds-come-back",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#These_are_the_days_when_birds_come_back",
+      "edition": "1890",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-the-morns-are-meeker-than-they-were",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_morns_are_meeker_than_they_were",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-sky-is-low-the-clouds-are-mean",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_sky_is_low_the_clouds_are_mean",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-think-the-hemlock-likes-to-stand",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_think_the_hemlock_likes_to_stand",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-theres-a-certain-slant-of-light",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Theres_a_certain_slant_of_light",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-one-dignity-delays-for-all",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#One_dignity_delays_for_all",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-delayed-till-she-had-ceased-to-know",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Delayed_till_she_had_ceased_to_know",
+      "edition": "1890",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-departed-to-the-judgment",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Departed_to_the_judgment",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-safe-in-their-alabaster-chambers",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Safe_in_their_alabaster_chambers",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-on-this-long-storm-the-rainbow-rose",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#On_this_long_storm_the_rainbow_rose",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-my-cocoon-tightens-colors-tease",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_cocoon_tightens_colors_tease",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-exultation-is-the-going",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Exultation_is_the_going",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-look-back-on-time-with-kindly-eyes",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Look_back_on_time_with_kindly_eyes",
+      "edition": "1890",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-died-for-beauty-but-was-scarce",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_died_for_beauty_but_was_scarce",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-how-many-times-these-low-feet-staggered",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#How_many_times_these_low_feet_staggered",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-like-a-look-of-agony",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_like_a_look_of_agony",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-that-short-potential-stir",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#That_short_potential_stir",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-went-to-thank-her",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_went_to_thank_her",
+      "edition": "1890",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-ive-seen-a-dying-eye",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Ive_seen_a_dying_eye",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-clouds-their-backs-together-laid",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_clouds_their_backs_together_laid",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-never-saw-a-moor",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_never_saw_a_moor",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-god-permits-industrious-angels",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#God_permits_industrious_angels",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-to-know-just-how-he-suffered-would-be-dear",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_know_just_how_he_suffered_would_be_dear",
+      "edition": "1890",
+      "verse_lines": 26
+    },
+    {
+      "id": "pg-the-last-night-that-she-lived",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_last_night_that_she_lived",
+      "edition": "1890",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-not-in-this-world-to-see-his-face",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Not_in_this_world_to_see_his_face",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-bustle-in-a-house",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_bustle_in_a_house",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-reason-earth-is-short",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_reason_earth_is_short",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-afraid-of-whom-am-i-afraid",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Afraid_Of_whom_am_I_afraid",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-sun-kept-setting-setting-still",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_sun_kept_setting_setting_still",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-two-swimmers-wrestled-on-the-spar",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Two_swimmers_wrestled_on_the_spar",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-because-i-could-not-stop-for-death",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Because_I_could_not_stop_for_Death",
+      "edition": "1890",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-she-went-as-quiet-as-the-dew",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_went_as_quiet_as_the_dew",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-at-last-to-be-identified",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#At_last_to_be_identified",
+      "edition": "1890",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-except-to-heaven-she-is-nought",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Except_to_heaven_she_is_nought",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-death-is-a-dialogue-between",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Death_is_a_dialogue_between",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-it-was-too-late-for-man",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_was_too_late_for_man",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-when-i-was-small-a-woman-died",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#When_I_was_small_a_woman_died",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-the-daisy-follows-soft-the-sun",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_daisy_follows_soft_the_sun",
+      "edition": "1890",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-no-rack-can-torture-me",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#No_rack_can_torture_me",
+      "edition": "1890",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-lost-a-world-the-other-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_lost_a_world_the_other_day",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-if-i-shouldnt-be-alive",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_I_shouldnt_be_alive",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-sleep-is-supposed-to-be",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Sleep_is_supposed_to_be",
+      "edition": "1890",
+      "verse_lines": 15
+    },
+    {
+      "id": "pg-i-shall-know-why-when-time-is-over",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_shall_know_why_when_time_is_over",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-never-lost-as-much-but-twice",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_never_lost_as_much_but_twice",
+      "edition": "1890",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-im-nobody-who-are-you",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Im_nobody_Who_are_you",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-bring-an-unaccustomed-wine",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_bring_an_unaccustomed_wine",
+      "edition": "1891",
+      "verse_lines": 21
+    },
+    {
+      "id": "pg-the-nearest-dream-recedes-unrealized",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_nearest_dream_recedes_unrealized",
+      "edition": "1891",
+      "verse_lines": 14
+    },
+    {
+      "id": "pg-we-play-at-paste",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_play_at_paste",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-found-the-phrase-to-every-thought",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_found_the_phrase_to_every_thought",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-hope-is-the-thing-with-feathers",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Hope_is_the_thing_with_feathers",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-dare-you-see-a-soul-at-the-white-heat",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Dare_you_see_a_soul_at_the_white_heat",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-who-never-lost-are-unprepared",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Who_never_lost_are_unprepared",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-can-wade-grief",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_can_wade_grief",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-never-hear-the-word-escape",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_never_hear_the_word_escape",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-for-each-ecstatic-instant",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#For_each_ecstatic_instant",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-through-the-straight-pass-of-suffering",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Through_the_straight_pass_of_suffering",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-meant-to-have-but-modest-needs",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_meant_to_have_but_modest_needs",
+      "edition": "1891",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-the-thought-beneath-so-slight-a-film",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_thought_beneath_so_slight_a_film",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-the-soul-unto-itself",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_soul_unto_itself",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-surgeons-must-be-very-careful",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Surgeons_must_be_very_careful",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-like-to-see-it-lap-the-miles",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_like_to_see_it_lap_the_miles",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-the-show-is-not-the-show",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_show_is_not_the_show",
+      "edition": "1891",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-delight-becomes-pictorial",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Delight_becomes_pictorial",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-thought-went-up-my-mind-to-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_thought_went_up_my_mind_to-day",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-is-heaven-a-physician",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Is_Heaven_a_physician",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-though-i-get-home-how-late-how-late",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Though_I_get_home_how_late_how_late",
+      "edition": "1891",
+      "verse_lines": 13
+    },
+    {
+      "id": "pg-a-poor-torn-heart-a-tattered-heart",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_poor_torn_heart_a_tattered_heart",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-should-have-been-too-glad-i-see",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_should_have_been_too_glad_I_see",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-it-tossed-and-tossed",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_tossed_and_tossed",
+      "edition": "1891",
+      "verse_lines": 13
+    },
+    {
+      "id": "pg-victory-comes-late",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Victory_comes_late",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-god-gave-a-loaf-to-every-bird",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#God_gave_a_loaf_to_every_bird",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-experiment-to-me",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Experiment_to_me",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-my-country-need-not-change-her-gown",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_country_need_not_change_her_gown",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-except-the-heaven-had-come-so-near",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Except_the_heaven_had_come_so_near",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-portraits-are-to-daily-faces",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Portraits_are_to_daily_faces",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-took-my-power-in-my-hand",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_took_my_power_in_my_hand",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-shady-friend-for-torrid-days",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_shady_friend_for_torrid_days",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-each-life-converges-to-some-centre",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Each_life_converges_to_some_centre",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-before-i-got-my-eye-put-out",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Before_I_got_my_eye_put_out",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-talk-with-prudence-to-a-beggar",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Talk_with_prudence_to_a_beggar",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-he-preached-upon-breadth-till-it-argued-him-narrow",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#He_preached_upon_breadth_till_it_argued_him_narrow",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-good-night-which-put-the-candle-out",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Good_night_which_put_the_candle_out",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-when-i-hoped-i-feared",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#When_I_hoped_I_feared",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-deed-knocks-first-at-thought",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_deed_knocks_first_at_thought",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-mine-enemy-is-growing-old",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Mine_enemy_is_growing_old",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-remorse-is-memory-awake",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Remorse_is_memory_awake",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-body-grows-outside",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_body_grows_outside",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-undue-significance-a-starving-man-attaches",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Undue_significance_a_starving_man_attaches",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-heart-not-so-heavy-as-mine",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Heart_not_so_heavy_as_mine",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-i-many-times-thought-peace-had-come",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_many_times_thought_peace_had_come",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-unto-my-books-so-good-to-turn",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Unto_my_books_so_good_to_turn",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-this-merit-hath-the-worst",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#This_merit_hath_the_worst",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-had-been-hungry-all-the-years",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_had_been_hungry_all_the_years",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-i-gained-it-so",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_gained_it_so",
+      "edition": "1891",
+      "verse_lines": 15
+    },
+    {
+      "id": "pg-to-learn-the-transport-by-the-pain",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_learn_the_transport_by_the_pain",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-years-had-been-from-home",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_years_had_been_from_home",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-prayer-is-the-little-implement",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Prayer_is_the_little_implement",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-know-that-he-exists",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_know_that_he_exists",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-musicians-wrestle-everywhere",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Musicians_wrestle_everywhere_",
+      "edition": "1891",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-just-lost-when-i-was-saved",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Just_lost_when_I_was_saved",
+      "edition": "1891",
+      "verse_lines": 19
+    },
+    {
+      "id": "pg-of-all-the-souls-that-stand-create",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Of_all_the_souls_that_stand_create",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-have-no-life-but-this",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_have_no_life_but_this",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-your-riches-taught-me-poverty",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Your_riches_taught_me_poverty",
+      "edition": "1891",
+      "verse_lines": 32
+    },
+    {
+      "id": "pg-i-gave-myself-to-him",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_gave_myself_to_him",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-going-to-him-happy-letter-tell-him",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Going_to_him_Happy_letter_Tell_him",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-the-way-i-read-a-letter-s-this",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_way_I_read_a_letter_s_this_",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-wild-nights-wild-nights",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Wild_nights_Wild_nights",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-night-was-wide-and-furnished-scant",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_night_was_wide_and_furnished_scant",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-did-the-harebell-loose-her-girdle",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Did_the_harebell_loose_her_girdle",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-charm-invests-a-face",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_charm_invests_a_face",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-rose-did-caper-on-her-cheek",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_rose_did_caper_on_her_cheek",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-in-lands-i-never-saw-they-say",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#In_lands_I_never_saw_they_say",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-moon-is-distant-from-the-sea",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_moon_is_distant_from_the_sea",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-he-put-the-belt-around-my-life",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#He_put_the_belt_around_my_life",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-held-a-jewel-in-my-fingers",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_held_a_jewel_in_my_fingers",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-what-if-i-say-i-shall-not-wait",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#What_if_I_say_I_shall_not_wait",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-nature-the-gentlest-mother",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Nature_the_gentlest_mother",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-will-there-really-be-a-morning",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Will_there_really_be_a_morning",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-at-half-past-three-a-single-bird",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#At_half-past_three_a_single_bird",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-day-came-slow-till-five-oclock",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_day_came_slow_till_five_oclock",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-the-sun-just-touched-the-morning",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_sun_just_touched_the_morning",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-the-robin-is-the-one",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_robin_is_the_one",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-from-cocoon-forth-a-butterfly",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#From_cocoon_forth_a_butterfly",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-before-you-thought-of-spring",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Before_you_thought_of_spring",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-an-altered-look-about-the-hills",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#An_altered_look_about_the_hills",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-whose-are-the-little-beds-i-asked",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Whose_are_the_little_beds_I_asked",
+      "edition": "1891",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-pigmy-seraphs-gone-astray",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Pigmy_seraphs_gone_astray",
+      "edition": "1891",
+      "verse_lines": 17
+    },
+    {
+      "id": "pg-to-hear-an-oriole-sing",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_hear_an_oriole_sing",
+      "edition": "1891",
+      "verse_lines": 15
+    },
+    {
+      "id": "pg-one-of-the-ones-that-midas-touched",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#One_of_the_ones_that_Midas_touched",
+      "edition": "1891",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-i-dreaded-that-first-robin-so",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_dreaded_that_first_robin_so",
+      "edition": "1891",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-a-route-of-evanescence",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_route_of_evanescence",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-skies-cant-keep-their-secret",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_skies_cant_keep_their_secret",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-who-robbed-the-woods",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Who_robbed_the_woods",
+      "edition": "1891",
+      "verse_lines": 9
+    },
+    {
+      "id": "pg-two-butterflies-went-out-at-noon",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Two_butterflies_went_out_at_noon",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-started-early-took-my-dog",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_started_early_took_my_dog",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-arcturus-is-his-other-name",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Arcturus_is_his_other_name",
+      "edition": "1891",
+      "verse_lines": 28
+    },
+    {
+      "id": "pg-an-awful-tempest-mashed-the-air",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#An_awful_tempest_mashed_the_air",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-an-everywhere-of-silver",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#An_everywhere_of_silver",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-a-bird-came-down-the-walk",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_bird_came_down_the_walk",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-a-narrow-fellow-in-the-grass",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_narrow_fellow_in_the_grass",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-the-mushroom-is-the-elf-of-plants",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_mushroom_is_the_elf_of_plants",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-there-came-a-wind-like-a-bugle",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_came_a_wind_like_a_bugle",
+      "edition": "1891",
+      "verse_lines": 17
+    },
+    {
+      "id": "pg-a-spider-sewed-at-night",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_spider_sewed_at_night",
+      "edition": "1891",
+      "verse_lines": 9
+    },
+    {
+      "id": "pg-i-know-a-place-where-summer-strives",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_know_a_place_where_summer_strives",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-one-that-could-repeat-the-summer-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_one_that_could_repeat_the_summer_day",
+      "edition": "1891",
+      "verse_lines": 9
+    },
+    {
+      "id": "pg-nature-rarer-uses-yellow",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Nature_rarer_uses_yellow",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-leaves-like-women-interchange",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_leaves_like_women_interchange",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-how-happy-is-the-little-stone",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#How_happy_is_the_little_stone",
+      "edition": "1891",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-it-sounded-as-if-the-streets-were-running",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_sounded_as_if_the_streets_were_running",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-rat-is-the-concisest-tenant",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_rat_is_the_concisest_tenant",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-frequently-the-woods-are-pink",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Frequently_the_woods_are_pink",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-wind-begun-to-rock-the-grass",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_wind_begun_to_rock_the_grass",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-south-winds-jostle-them",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#South_winds_jostle_them",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-where-ships-of-purple-gently-toss",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Where_ships_of_purple_gently_toss",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-she-sweeps-with-many-colored-brooms",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_sweeps_with_many-colored_brooms",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-like-mighty-footlights-burned-the-red",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Like_mighty_footlights_burned_the_red",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-bring-me-the-sunset-in-a-cup",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Bring_me_the_sunset_in_a_cup",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-blazing-in-gold-and-quenching-in-purple",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Blazing_in_gold_and_quenching_in_purple",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-farther-in-summer-than-the-birds",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Farther_in_summer_than_the_birds",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-as-imperceptibly-as-grief",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#As_imperceptibly_as_grief",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-it-cant-be-summer-that-got-through",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_cant_be_summer_that_got_through",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-gentian-weaves-her-fringes",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_gentian_weaves_her_fringes",
+      "edition": "1891",
+      "verse_lines": 19
+    },
+    {
+      "id": "pg-god-made-a-little-gentian",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#God_made_a_little_gentian",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-besides-the-autumn-poets-sing",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Besides_the_autumn_poets_sing",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-it-sifts-from-leaden-sieves",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_sifts_from_leaden_sieves",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-no-brigadier-throughout-the-year",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#No_brigadier_throughout_the_year",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-let-down-the-bars-o-death",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Let_down_the_bars_O_Death",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-going-to-heaven",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Going_to_heaven",
+      "edition": "1891",
+      "verse_lines": 27
+    },
+    {
+      "id": "pg-at-least-to-pray-is-left-is-left",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#At_least_to_pray_is_left_is_left",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-step-lightly-on-this-narrow-spot",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Step_lightly_on_this_narrow_spot",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-morns-like-these-we-parted",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Morns_like_these_we_parted",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-a-death-blow-is-a-life-blow-to-some",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_death-blow_is_a_life-blow_to_some",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-read-my-sentence-steadily",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_read_my_sentence_steadily",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-have-not-told-my-garden-yet",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_have_not_told_my_garden_yet",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-they-dropped-like-flakes-they-dropped-like-stars",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#They_dropped_like_flakes_they_dropped_like_stars",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-only-ghost-i-ever-saw",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_only_ghost_I_ever_saw",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-some-too-fragile-for-winter-winds",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Some_too_fragile_for_winter_winds",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-as-by-the-dead-we-love-to-sit",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#As_by_the_dead_we_love_to_sit",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-death-sets-a-thing-significant",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Death_sets_a_thing_significant",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-i-went-to-heaven",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_went_to_heaven",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-their-height-in-heaven-comforts-not",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Their_height_in_heaven_comforts_not",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-there-is-a-shame-of-nobleness",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_is_a_shame_of_nobleness",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-triumph-may-be-of-several-kinds",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Triumph_may_be_of_several_kinds",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-pompless-no-life-can-pass-away",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Pompless_no_life_can_pass_away",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-noticed-people-disappeared",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_noticed_people_disappeared",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-had-no-cause-to-be-awake",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_had_no_cause_to_be_awake",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-if-anybodys-friend-be-dead",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_anybodys_friend_be_dead",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-our-journey-had-advanced",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Our_journey_had_advanced",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-ample-make-this-bed",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Ample_make_this_bed",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-on-such-a-night-or-such-a-night",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#On_such_a_night_or_such_a_night",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-essential-oils-are-wrung",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Essential_oils_are_wrung_",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-lived-on-dread-to-those-who-know",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_lived_on_dread_to_those_who_know",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-if-i-should-die",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_I_should_die",
+      "edition": "1891",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-her-final-summer-was-it",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Her_final_summer_was_it",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-one-need-not-be-a-chamber-to-be-haunted",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#One_need_not_be_a_chamber_to_be_haunted",
+      "edition": "1891",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-she-died-this-was-the-way-she-died",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_died_this_was_the_way_she_died",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-wait-till-the-majesty-of-death",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Wait_till_the_majesty_of_Death",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-went-up-a-year-this-evening",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Went_up_a_year_this_evening",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-taken-from-men-this-morning",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Taken_from_men_this_morning",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-what-inn-is-this",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#What_inn_is_this",
+      "edition": "1891",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-it-was-not-death-for-i-stood-up",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_was_not_death_for_I_stood_up",
+      "edition": "1891",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-i-should-not-dare-to-leave-my-friend",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_should_not_dare_to_leave_my_friend",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-great-streets-of-silence-led-away",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Great_streets_of_silence_led_away",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-throe-upon-the-features",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_throe_upon_the_features",
+      "edition": "1891",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-of-tribulation-these-are-they",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Of_tribulation_these_are_they",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-think-just-how-my-shape-will-rise",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_think_just_how_my_shape_will_rise",
+      "edition": "1891",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-after-a-hundred-years",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#After_a_hundred_years",
+      "edition": "1891",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-lay-this-laurel-on-the-one",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Lay_this_laurel_on_the_one",
+      "edition": "1891",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-t-is-little-i-could-care-for-pearls",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_is_little_I_could_care_for_pearls",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-superiority-to-fate",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Superiority_to_fate",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-hope-is-a-subtle-glutton",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Hope_is_a_subtle_glutton",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-forbidden-fruit-a-flavor-has",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Forbidden_fruit_a_flavor_has",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-heaven-is-what-i-cannot-reach",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Heaven_is_what_I_cannot_reach",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-word-is-dead",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_word_is_dead",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-to-venerate-the-simple-days",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_venerate_the_simple_days",
+      "edition": "1896",
+      "verse_lines": 11
+    },
+    {
+      "id": "pg-its-such-a-little-thing-to-weep",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Its_such_a_little_thing_to_weep",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-drowning-is-not-so-pitiful",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Drowning_is_not_so_pitiful",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-how-still-the-bells-in-steeples-stand",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#How_still_the_bells_in_steeples_stand",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-if-the-foolish-call-them-flowers",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_the_foolish_call_them_flowers",
+      "edition": "1896",
+      "verse_lines": 21
+    },
+    {
+      "id": "pg-could-mortal-lip-divine",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Could_mortal_lip_divine",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-my-life-closed-twice-before-its-close",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_life_closed_twice_before_its_close",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-we-never-know-how-high-we-are",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_never_know_how_high_we_are",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-while-i-was-fearing-it-it-came",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#While_I_was_fearing_it_it_came",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-there-is-no-frigate-like-a-book",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_is_no_frigate_like_a_book",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-who-has-not-found-the-heaven-below",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Who_has_not_found_the_heaven_below",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-a-face-devoid-of-love-or-grace",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_face_devoid_of_love_or_grace",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-i-had-a-guinea-golden",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_had_a_guinea_golden",
+      "edition": "1896",
+      "verse_lines": 41
+    },
+    {
+      "id": "pg-from-all-the-jails-the-boys-and-girls",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#From_all_the_jails_the_boys_and_girls",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-few-get-enough-enough-is-one",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Few_get_enough_enough_is_one",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-upon-the-gallows-hung-a-wretch",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Upon_the_gallows_hung_a_wretch",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-felt-a-clearing-in-my-mind",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_felt_a_clearing_in_my_mind",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-reticent-volcano-keeps",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_reticent_volcano_keeps",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-if-recollecting-were-forgetting",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_recollecting_were_forgetting",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-farthest-thunder-that-i-heard",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_farthest_thunder_that_I_heard",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-on-the-bleakness-of-my-lot",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#On_the_bleakness_of_my_lot",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-door-just-opened-on-a-street",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_door_just_opened_on_a_street",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-are-friends-delight-or-pain",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Are_friends_delight_or_pain",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-ashes-denote-that-fire-was",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Ashes_denote_that_fire_was",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-fate-slew-him-but-he-did-not-drop",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Fate_slew_him_but_he_did_not_drop",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-finite-to-fail-but-infinite-to-venture",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Finite_to_fail_but_infinite_to_venture",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-measure-every-grief-i-meet",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_measure_every_grief_I_meet",
+      "edition": "1896",
+      "verse_lines": 36
+    },
+    {
+      "id": "pg-i-have-a-king-who-does-not-speak",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_have_a_king_who_does_not_speak",
+      "edition": "1896",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-it-dropped-so-low-in-my-regard",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_dropped_so_low_in_my_regard",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-to-lose-ones-faith-surpasses",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_lose_ones_faith_surpasses",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-had-a-daily-bliss",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_had_a_daily_bliss",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-worked-for-chaff-and-earning-wheat",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_worked_for_chaff_and_earning_wheat",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-life-and-death-and-giants",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Life_and_Death_and_Giants",
+      "edition": "1896",
+      "verse_lines": 7
+    },
+    {
+      "id": "pg-our-lives-are-swiss",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Our_lives_are_Swiss",
+      "edition": "1896",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-remembrance-has-a-rear-and-front",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Remembrance_has_a_rear_and_front",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-to-hang-our-head-ostensibly",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_hang_our_head_ostensibly",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-brain-is-wider-than-the-sky",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_brain_is_wider_than_the_sky",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-bone-that-has-no-marrow",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_bone_that_has_no_marrow",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-past-is-such-a-curious-creature",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_past_is_such_a_curious_creature",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-to-help-our-bleaker-parts",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_help_our_bleaker_parts",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-what-soft-cherubic-creatures",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#What_soft_cherubic_creatures",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-who-never-wanted-maddest-joy",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Who_never_wanted_maddest_joy",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-it-might-be-easier",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_might_be_easier",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-you-cannot-put-a-fire-out",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#You_cannot_put_a_fire_out",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-modest-lot-a-fame-petite",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_modest_lot_a_fame_petite",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-is-bliss-then-such-abyss",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Is_bliss_then_such_abyss",
+      "edition": "1896",
+      "verse_lines": 11
+    },
+    {
+      "id": "pg-i-stepped-from-plank-to-plank",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_stepped_from_plank_to_plank",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-one-day-is-there-of-the-series",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#One_day_is_there_of_the_series",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-softened-by-times-consummate-plush",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Softened_by_Times_consummate_plush",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-proud-of-my-broken-heart-since-thou-didst-break-it",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Proud_of_my_broken_heart_since_thou_didst_break_it",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-my-worthiness-is-all-my-doubt",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_worthiness_is_all_my_doubt",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-love-is-anterior-to-life",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Love_is_anterior_to_life",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-one-blessing-had-i-than-the-rest",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#One_blessing_had_I_than_the_rest",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-when-roses-cease-to-bloom-dear",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#When_roses_cease_to_bloom_dear",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-summer-for-thee-grant-i-may-be",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Summer_for_thee_grant_I_may_be",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-split-the-lark-and-youll-find-the-music",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Split_the_lark_and_youll_find_the_music",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-to-lose-thee-sweeter-than-to-gain",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_lose_thee_sweeter_than_to_gain",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-poor-little-heart",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Poor_little_heart",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-there-is-a-word",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#There_is_a_word",
+      "edition": "1896",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-ive-got-an-arrow-here",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Ive_got_an_arrow_here",
+      "edition": "1896",
+      "verse_lines": 7
+    },
+    {
+      "id": "pg-he-fumbles-at-your-spirit",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#He_fumbles_at_your_spirit",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-heart-we-will-forget-him",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Heart_we_will_forget_him",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-father-i-bring-thee-not-myself",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Father_I_bring_thee_not_myself",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-we-outgrow-love-like-other-things",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_outgrow_love_like_other_things",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-not-with-a-club-the-heart-is-broken",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Not_with_a_club_the_heart_is_broken",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-my-friend-must-be-a-bird",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#My_friend_must_be_a_bird",
+      "edition": "1896",
+      "verse_lines": 7
+    },
+    {
+      "id": "pg-he-touched-me-so-i-live-to-know",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#He_touched_me_so_I_live_to_know",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-let-me-not-mar-that-perfect-dream",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Let_me_not_mar_that_perfect_dream",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-i-live-with-him-i-see-his-face",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_live_with_him_I_see_his_face",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-envy-seas-whereon-he-rides",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_envy_seas_whereon_he_rides",
+      "edition": "1896",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-a-solemn-thing-it-was-i-said",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_solemn_thing_it_was_I_said",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-springtimes-pallid-landscape",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_springtimes_pallid_landscape",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-she-slept-beneath-a-tree",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_slept_beneath_a_tree",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-a-light-exists-in-spring",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_light_exists_in_spring",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-a-lady-red-upon-the-hill",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_lady_red_upon_the_hill",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-dear-march-come-in",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Dear_March_come_in",
+      "edition": "1896",
+      "verse_lines": 29
+    },
+    {
+      "id": "pg-we-like-march-his-shoes-are-purple",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_like_March_his_shoes_are_purple",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-not-knowing-when-the-dawn-will-come",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Not_knowing_when_the_dawn_will_come",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-a-murmur-in-the-trees-to-note",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_murmur_in_the_trees_to_note",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-morning-is-the-place-for-dew",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Morning_is_the_place_for_dew",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-to-my-quick-ear-the-leaves-conferred",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_my_quick_ear_the_leaves_conferred",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-sepal-petal-and-a-thorn",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_sepal_petal_and_a_thorn",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-high-from-the-earth-i-heard-a-bird",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#High_from_the_earth_I_heard_a_bird",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-the-spider-as-an-artist",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_spider_as_an_artist",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-what-mystery-pervades-a-well",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#What_mystery_pervades_a_well",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-to-make-a-prairie-it-takes-a-clover-and-one-bee",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#To_make_a_prairie_it_takes_a_clover_and_one_bee",
+      "edition": "1896",
+      "verse_lines": 5
+    },
+    {
+      "id": "pg-its-like-the-light",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Its_like_the_light",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-a-dew-sufficed-itself",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_dew_sufficed_itself",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-his-bill-an-auger-is",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#His_bill_an_auger_is",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-sweet-is-the-swamp-with-its-secrets",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Sweet_is_the_swamp_with_its_secrets",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-could-i-but-ride-indefinite",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Could_I_but_ride_indefinite",
+      "edition": "1896",
+      "verse_lines": 18
+    },
+    {
+      "id": "pg-the-moon-was-but-a-chin-of-gold",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_moon_was_but_a_chin_of_gold",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-the-bat-is-dun-with-wrinkled-wings",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_bat_is_dun_with_wrinkled_wings",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-youve-seen-balloons-set-havent-you",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Youve_seen_balloons_set_havent_you",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-the-cricket-sang",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_cricket_sang",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-drab-habitation-of-whom",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Drab_habitation_of_whom",
+      "edition": "1896",
+      "verse_lines": 5
+    },
+    {
+      "id": "pg-a-sloop-of-amber-slips-away",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_sloop_of_amber_slips_away",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-of-bronze-and-blaze",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Of_bronze_and_blaze",
+      "edition": "1896",
+      "verse_lines": 19
+    },
+    {
+      "id": "pg-how-the-old-mountains-drip-with-sunset",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#How_the_old_mountains_drip_with_sunset",
+      "edition": "1896",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-the-murmuring-of-bees-has-ceased",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_murmuring_of_bees_has_ceased",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-this-world-is-not-conclusion",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#This_world_is_not_conclusion",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-we-learn-in-the-retreating",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_learn_in_the_retreating",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-they-say-that-time-assuages",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#They_say_that_time_assuages",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-we-cover-thee-sweet-face",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_cover_thee_sweet_face",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-that-is-solemn-we-have-ended",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#That_is_solemn_we_have_ended",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-stimulus-beyond-the-grave",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_stimulus_beyond_the_grave",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-given-in-marriage-unto-thee",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Given_in_marriage_unto_thee",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-that-such-have-died-enables-us",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#That_such_have_died_enables_us",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-they-wont-frown-always-some-sweet-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#They_wont_frown_always_some_sweet_day",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-it-is-an-honorable-thought",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_is_an_honorable_thought",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-the-distance-that-the-dead-have-gone",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_distance_that_the_dead_have_gone",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-how-dare-the-robins-sing",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#How_dare_the_robins_sing",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-death-is-like-the-insect",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Death_is_like_the_insect",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-t-is-sunrise-little-maid-hast-thou",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_is_sunrise_little_maid_hast_thou",
+      "edition": "1896",
+      "verse_lines": 14
+    },
+    {
+      "id": "pg-each-that-we-lose-takes-part-of-us",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Each_that_we_lose_takes_part_of_us",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-not-any-higher-stands-the-grave",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Not_any_higher_stands_the_grave",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-as-far-from-pity-as-complaint",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#As_far_from_pity_as_complaint",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-t-is-whiter-than-an-indian-pipe",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_is_whiter_than_an_Indian_pipe",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-she-laid-her-docile-crescent-down",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#She_laid_her_docile_crescent_down",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-bless-god-he-went-as-soldiers",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Bless_God_he_went_as_soldiers",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-immortal-is-an-ample-word",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Immortal_is_an_ample_word",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-where-every-bird-is-bold-to-go",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Where_every_bird_is_bold_to_go",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-the-grave-my-little-cottage-is",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_grave_my_little_cottage_is",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-this-was-in-the-white-of-the-year",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#This_was_in_the_white_of_the_year",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-sweet-hours-have-perished-here",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Sweet_hours_have_perished_here",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-me-come-my-dazzled-face",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Me_Come_My_dazzled_face",
+      "edition": "1896",
+      "verse_lines": 10
+    },
+    {
+      "id": "pg-from-us-she-wandered-now-a-year",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#From_us_she_wandered_now_a_year",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-wish-i-knew-that-womans-name",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_wish_I_knew_that_womans_name",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-bereaved-of-all-i-went-abroad",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Bereaved_of_all_I_went_abroad",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-felt-a-funeral-in-my-brain",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_felt_a_funeral_in_my_brain",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-meant-to-find-her-when-i-came",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_meant_to_find_her_when_I_came",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-sing-to-use-the-waiting",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_sing_to_use_the_waiting",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-sickness-of-this-world-it-most-occasions",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_sickness_of_this_world_it_most_occasions",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-superfluous-were-the-sun",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Superfluous_were_the_sun",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-so-proud-she-was-to-die",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#So_proud_she_was_to_die",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-tie-the-strings-to-my-life-my-lord",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Tie_the_strings_to_my_life_my_Lord_",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-the-dying-need-but-little-dear",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_dying_need_but_little_dear",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-theres-something-quieter-than-sleep",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Theres_something_quieter_than_sleep",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-the-soul-should-always-stand-ajar",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#The_soul_should_always_stand_ajar",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-three-weeks-passed-since-i-had-seen-her",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Three_weeks_passed_since_I_had_seen_her",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-i-breathed-enough-to-learn-the-trick",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_breathed_enough_to_learn_the_trick",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-i-wonder-if-the-sepulchre",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_wonder_if_the_sepulchre",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-if-tolling-bell-i-ask-the-cause",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_tolling_bell_I_ask_the_cause",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-if-i-may-have-it-when-its-dead",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#If_I_may_have_it_when_its_dead",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-before-the-ice-is-in-the-pools",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Before_the_ice_is_in_the_pools",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-i-heard-a-fly-buzz-when-i-died",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#I_heard_a_fly_buzz_when_I_died",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-adrift-a-little-boat-adrift",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Adrift_A_little_boat_adrift",
+      "edition": "1896",
+      "verse_lines": 13
+    },
+    {
+      "id": "pg-theres-been-a-death-in-the-opposite-house",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Theres_been_a_death_in_the_opposite_house",
+      "edition": "1896",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-we-never-know-we-go-when-we-are-going",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_never_know_we_go_when_we_are_going",
+      "edition": "1896",
+      "verse_lines": 4
+    },
+    {
+      "id": "pg-it-struck-me-every-day",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#It_struck_me_every_day",
+      "edition": "1896",
+      "verse_lines": 12
+    },
+    {
+      "id": "pg-water-is-taught-by-thirst",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Water_is_taught_by_thirst",
+      "edition": "1896",
+      "verse_lines": 6
+    },
+    {
+      "id": "pg-we-thirst-at-first-t-is-natures-act",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#We_thirst_at_first_t_is_Natures_act",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-clock-stopped-not-the-mantels",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_clock_stopped_not_the_mantels",
+      "edition": "1896",
+      "verse_lines": 16
+    },
+    {
+      "id": "pg-all-overgrown-by-cunning-moss",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#All_overgrown_by_cunning_moss",
+      "edition": "1896",
+      "verse_lines": 20
+    },
+    {
+      "id": "pg-a-toad-can-die-of-light",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_toad_can_die_of_light",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-far-from-love-the-heavenly-father",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#Far_from_love_the_Heavenly_Father",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-a-long-long-sleep-a-famous-sleep",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#A_long_long_sleep_a_famous_sleep",
+      "edition": "1896",
+      "verse_lines": 8
+    },
+    {
+      "id": "pg-t-was-just-this-time-last-year-i-died",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#T_was_just_this_time_last_year_I_died",
+      "edition": "1896",
+      "verse_lines": 24
+    },
+    {
+      "id": "pg-on-this-wondrous-sea",
+      "source": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html#On_this_wondrous_sea",
+      "edition": "1896",
+      "verse_lines": 12
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import vm from 'node:vm';
 
 // Exercise the real conversation controller against browser media API doubles.
 function classroom({ microphone = true } = {}) {
-  const elements = new Map(), timers = new Map(), spoken = [], played = [];
+  const elements = new Map(), timers = new Map(), spoken = [], played = [], recognizers = [];
   let timerId = 0;
   const make = () => ({
     textContent: '', value: '', disabled: false, children: [], handlers: {},
@@ -17,7 +17,9 @@ function classroom({ microphone = true } = {}) {
   const get = id => { if (!elements.has(id)) elements.set(id, make()); return elements.get(id); };
   get('voiceEngine').value = 'natural'; get('rateRange').value = '0.9'; get('spokenReplies').checked = true;
   const recognition = class {
+    constructor() { recognizers.push(this); }
     start() { this.starts = (this.starts || 0) + 1; this.onstart?.(); }
+    stop() { this.stops = (this.stops || 0) + 1; this.onend?.(); }
     abort() { this.aborts = (this.aborts || 0) + 1; }
   };
   const Audio = class {
@@ -41,7 +43,7 @@ function classroom({ microphone = true } = {}) {
   const source = readFileSync(new URL('../app.js', import.meta.url), 'utf8').replace(/\ninit\(\);\s*$/, '');
   vm.runInContext(source, context);
   vm.runInContext('setupSpeechRecognition(); aiOnline=true;', context);
-  return { context, get, spoken, played, timers, run: code => vm.runInContext(code, context) };
+  return { context, get, spoken, played, timers, recognizers, run: code => vm.runInContext(code, context) };
 }
 
 test('a live spoken answer pauses the microphone and resumes only after playback', async () => {
@@ -187,4 +189,139 @@ test('opening conversation mode stops an active poem reading', () => {
   assert.equal(c.run('speakingKind'), null);
   assert.equal(c.run('activeTab'), 'talk');
   assert.equal(c.get('portraitTitle').textContent, 'A conversation with Emily');
+});
+
+function voiceCapture({ live = true } = {}) {
+  const c = classroom(), sent = [], unsent = [];
+  c.context.capturedTurns = sent; c.context.unsentTurns = unsent;
+  c.run('answerQuestion=words=>capturedTurns.push(words); preserveUnsentSpeech=words=>unsentTurns.push(words);');
+  c.get(live ? 'liveBtn' : 'micBtn').handlers.click();
+  return { ...c, sent, unsent, current: () => c.run('recognition') };
+}
+
+function speechResults(recognizer, parts, resultIndex = 0) {
+  const results = parts.map(([transcript, final]) => Object.assign([{ transcript }], { isFinal: final }));
+  recognizer.onresult({ resultIndex, results });
+}
+
+function fireTimer(c, delay) {
+  const entry = [...c.timers].find(([, timer]) => timer.delay === delay);
+  assert.ok(entry, `Expected a ${delay} ms timer`);
+  c.timers.delete(entry[0]); entry[1].fn();
+}
+
+test('continuous speech revises interim results and sends all segments after a natural pause', () => {
+  const c = voiceCapture(), r = c.current();
+  assert.equal(r.continuous, true); assert.equal(r.interimResults, true);
+  r.onspeechstart();
+  speechResults(r, [['I would', false]]);
+  speechResults(r, [['I would like', true], [' to share', false]]);
+  speechResults(r, [['I would like', true], [' to share a thought.', false]], 1);
+  assert.equal(c.get('listeningTranscript').textContent, 'I would like to share a thought.');
+  assert.equal(c.sent.length, 0);
+  assert.equal([...c.timers.values()].filter(t => t.delay === 1500).length, 0);
+  // A removal-only event discards the superseded interim suffix.
+  speechResults(r, [['I would like', true]], 1);
+  assert.equal(c.get('listeningTranscript').textContent, 'I would like');
+  speechResults(r, [['I would like', true], [' to share a thought.', true]], 1);
+  r.onspeechend(); fireTimer(c, 1500);
+  assert.deepEqual(c.sent, ['I would like to share a thought.']);
+  assert.equal(r.stops, 1); assert.deepEqual(c.unsent, []);
+});
+
+test('separate recognition results keep word boundaries without supplied whitespace', () => {
+  const c=voiceCapture(), r=c.current();
+  speechResults(r,[['We have',true],['two questions.',true]]);
+  assert.equal(c.get('listeningTranscript').textContent,'We have two questions.');
+  r.onspeechend();fireTimer(c,1500);
+  assert.deepEqual(c.sent,['We have two questions.']);
+});
+
+test('a renewed phrase or newer interim invalidates earlier pause callbacks', () => {
+  const c = voiceCapture(), r = c.current();
+  speechResults(r, [['The first part', false]]);
+  const oldPause = [...c.timers.values()].find(t => t.delay === 1500).fn;
+  r.onspeechstart(); oldPause();
+  assert.equal(c.sent.length, 0);
+  speechResults(r, [['The first part continues', false]]);
+  r.onspeechend();
+  const supersededPause = [...c.timers.values()].find(t => t.delay === 1500).fn;
+  speechResults(r, [['The first part continues a little longer.', true]]);
+  supersededPause(); assert.equal(c.sent.length, 0);
+  fireTimer(c, 1500);
+  assert.deepEqual(c.sent, ['The first part continues a little longer.']);
+});
+
+test('early recognition endings preserve segments across one-shot restarts without duplicate sends', () => {
+  const c = voiceCapture({ live: false }), first = c.current();
+  speechResults(first, [['One thought.', true], [' Another', false]]);
+  first.onend(); fireTimer(c, 650);
+  const next = c.current(); assert.notEqual(next, first);
+  next.onspeechstart();
+  speechResults(next, [[' thought follows.', true]]);
+  speechResults(first, [['Late old words', true]]); first.onend();
+  next.onspeechend(); fireTimer(c, 1500);
+  assert.deepEqual(c.sent, ['One thought. Another thought follows.']);
+  next.onend(); assert.equal(c.sent.length, 1);
+});
+
+test('graceful stop waits for final corrections and commits only once', () => {
+  const c = voiceCapture(), r = c.current();
+  r.stop = () => { r.stops = (r.stops || 0) + 1; };
+  speechResults(r, [['A little flour', false]]); fireTimer(c, 1500);
+  assert.equal(c.sent.length, 0); assert.equal(r.stops, 1);
+  const fallback = [...c.timers.values()].find(t => t.delay === 1200).fn;
+  speechResults(r, [['A little flower', true]]); r.onend(); fallback();
+  assert.deepEqual(c.sent, ['A little flower']);
+  assert.deepEqual(c.unsent, []);
+});
+
+test('missing final events preserve the complete observed interim at the guarded fallback', () => {
+  const c = voiceCapture(), r = c.current(), words = 'A complete long recognized thought. '.repeat(20);
+  r.stop = () => {};
+  speechResults(r, [[words, false]]); fireTimer(c, 1500); fireTimer(c, 1200);
+  assert.deepEqual(c.sent, [words]);
+  r.onend(); speechResults(r, [['Late replacement', true]]);
+  assert.equal(c.sent.length, 1);
+});
+
+test('stopping, hiding, or changing mode cancels pending speech and preserves it once', async t => {
+  for (const reason of ['stop', 'hidden', 'mode']) await t.test(reason, () => {
+    const c = voiceCapture(), r = c.current();
+    speechResults(r, [['Words still being spoken', false]]);
+    const pending = [...c.timers.values()].find(timer => timer.delay === 1500).fn;
+    if (reason === 'stop') c.get('liveBtn').handlers.click();
+    else if (reason === 'hidden') { c.context.document.hidden = true; c.run('endLive()'); }
+    else c.run("switchTab('read')");
+    pending(); r.onend(); speechResults(r, [['Late result', true]]);
+    assert.deepEqual(c.sent, []); assert.deepEqual(c.unsent, ['Words still being spoken']);
+    assert.equal(c.run('captureActive'), false);
+    assert.equal([...c.timers.values()].filter(timer => [650, 1500, 1200].includes(timer.delay)).length, 0);
+  });
+});
+
+test('three empty recognition sessions pause instead of restarting forever', () => {
+  const c = voiceCapture();
+  for (let i = 0; i < 3; i++) {
+    const r = c.current(); r.onerror({ error: 'no-speech' }); r.onend();
+    if (i < 2) fireTimer(c, 650);
+  }
+  assert.equal(c.run('captureActive'), false); assert.equal(c.run('live'), false);
+  assert.deepEqual(c.sent, []);
+  assert.equal([...c.timers.values()].filter(timer => timer.delay === 650).length, 0);
+});
+
+test('cancelled finalization and queued restart callbacks cannot send or reopen the microphone', () => {
+  const c = voiceCapture(), r = c.current();
+  r.stop = () => {};
+  speechResults(r, [['A thought waiting for final recognition', false]]); fireTimer(c, 1500);
+  const finalFallback = [...c.timers.values()].find(timer => timer.delay === 1200).fn;
+  c.get('liveBtn').handlers.click(); finalFallback(); r.onend();
+  assert.deepEqual(c.sent, []);
+  assert.deepEqual(c.unsent, ['A thought waiting for final recognition']);
+  c.get('liveBtn').handlers.click(); c.current().onend();
+  const restart = [...c.timers.values()].find(timer => timer.delay === 650).fn;
+  c.get('liveBtn').handlers.click();
+  const count = c.recognizers.length; restart();
+  assert.equal(c.recognizers.length, count); assert.equal(c.run('recognitionRunning'), false);
 });

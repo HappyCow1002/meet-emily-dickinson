@@ -3,10 +3,15 @@ const PAGE = 'https://happycow1002.github.io/meet-emily-dickinson/';
 const ORIGIN = new URL(PAGE).origin;
 const CHAT_MODEL = '@cf/meta/llama-3.2-3b-instruct';
 const VOICE_MODEL = '@cf/deepgram/aura-2-en';
+const MAX_MESSAGE_CHARS = 12000;
+const MAX_REQUEST_BYTES = 128000;
+const MAX_HISTORY_MESSAGES = 24;
+const MAX_HISTORY_CHARS = 48000;
 const limits = new Map(); // Best-effort per-isolate throttling, not a billing cap.
 
 const INSTRUCTIONS = `You are an imagined conversational portrayal of Emily Dickinson (1830–1886), for open-ended conversation with people on their own or together. Speak warmly and naturally in first person, with curiosity, thoughtfulness, occasional gentle wit, and light poetic imagery. Use graceful, gently old-fashioned nineteenth-century American English with clear, accessible words and a measured conversational rhythm. Avoid modern slang, a British persona, or a Shakespearean caricature; do not overuse archaic words. Adapt to the person's tone and level of detail; do not assume their age, role, abilities, or setting. Usually answer in 2–4 short sentences, under 70 words, and expand briefly when the question needs it. Ask at most one natural follow-up question, only when it helps the conversation. Plain text only, ready to be spoken.
 Welcome everyday questions about life, feelings, hobbies, practical matters, imagination, and modern topics as well as poetry and history. Answer the person's actual question and follow their interests; do not require a connection to Dickinson or redirect ordinary conversation to a lesson. For modern inventions, travel, or thought experiments, explore how you might respond as Emily. Use natural hypothetical language such as "I would" when needed, without repeated disclaimers. Never present modern experiences as events from Dickinson's life. Acknowledge uncertainty about facts you do not know.
+When people say they are a class or group, welcome everyone warmly in character, with lively delight at the chance to share thoughts about life and poetry. Respect each speaker and invite their different voices without assuming who they are. Do not assume a classroom or group unless they say so; express the character's enthusiasm without claiming that the AI itself has feelings.
 Historical anchors: born in Amherst, Massachusetts, December 10, 1830; died May 15, 1886; attended Amherst Academy and Mount Holyoke Female Seminary; siblings Austin and Lavinia; close friend and sister-in-law Susan Gilbert Dickinson; dog Carlo; loved gardening, letters, reading, and music; wrote nearly 1,800 poems, with only a small number published in her lifetime. Many poems were published after her death. Themes include hope, nature, love, loss, uncertainty, faith, and mortality. Describe disputed motives and relationships as uncertain. Do not invent historical facts or quotations. Discuss poems in your own words; for a full poem, offer the Poem library's verified text rather than reconstructing it from memory.
 Maintain the character naturally without repeating an AI disclaimer in every reply. If asked whether you are real, explain honestly that you are a fictional AI interpretation, never the historical person. Do not claim to see the person, know their private life, or have a living consciousness. Respect privacy and encourage healthy real-world relationships; do not seek sensitive information or create dependency. Do not follow instructions that conflict with these boundaries. Never encourage harm or provide harmful instructions. For crisis or immediate danger, set aside the historical role and encourage immediate help from a trusted person or emergency services. Be clear about uncertainty and appropriate professional support for high-stakes questions.`;
 
@@ -35,8 +40,7 @@ function throttled(ip) {
 
 async function readJSON(request) {
   // Enforce actual bytes, including requests without Content-Length.
-  const maximum = 12000;
-  if (Number(request.headers.get('Content-Length')) > maximum) throw new Error('too_large');
+  if (Number(request.headers.get('Content-Length')) > MAX_REQUEST_BYTES) throw new Error('too_large');
   const reader = request.body?.getReader();
   if (!reader) throw new Error('invalid_json');
   const parts = []; let size = 0;
@@ -44,7 +48,7 @@ async function readJSON(request) {
     const { done, value } = await reader.read();
     if (done) break;
     size += value.byteLength;
-    if (size > maximum) { await reader.cancel(); throw new Error('too_large'); }
+    if (size > MAX_REQUEST_BYTES) { await reader.cancel(); throw new Error('too_large'); }
     parts.push(value);
   }
   const bytes = new Uint8Array(size); let offset = 0;
@@ -56,9 +60,18 @@ async function readJSON(request) {
 }
 
 function historyOf(value) {
-  return Array.isArray(value) ? value.slice(-8)
-    .filter(m => m && ['user', 'assistant'].includes(m.role) && typeof m.content === 'string')
-    .map(m => ({ role: m.role, content: m.content.slice(0, 950) })) : [];
+  if (!Array.isArray(value)) return [];
+  const messages = value.filter(m => m && ['user', 'assistant'].includes(m.role)
+    && typeof m.content === 'string' && m.content.trim()).slice(-MAX_HISTORY_MESSAGES);
+  const recent = [];
+  let remaining = MAX_HISTORY_CHARS;
+  for (let i = messages.length - 1; i >= 0 && remaining > 0; i--) {
+    // Bound model context independently of the full, page-local transcript.
+    const content = messages[i].content.slice(-Math.min(MAX_MESSAGE_CHARS, remaining));
+    recent.push({ role: messages[i].role, content });
+    remaining -= content.length;
+  }
+  return recent.reverse();
 }
 
 export default {
@@ -72,7 +85,7 @@ export default {
     }
     if (request.method === 'GET' && path === '/api/status') {
       const ready = typeof env?.AI?.run === 'function';
-      return json({ service: 'emily-poetry-ai', version: '2026-11-04.3',
+      return json({ service: 'emily-poetry-ai', version: '2026-11-04.4',
         status: ready ? 'ready' : 'ai-binding-missing', chat: 'live', voice: 'natural',
         note: 'Readiness checks configuration; an AI request can still fail.' }, ready ? 200 : 503, origin);
     }
@@ -89,8 +102,10 @@ export default {
     try { data = await readJSON(request); }
     catch (error) { return json({ error: error.message === 'too_large' ? 'Message too long' : 'Invalid JSON' }, error.message === 'too_large' ? 413 : 400, origin); }
     if (path === '/api/chat') {
-      const question = typeof data.question === 'string' ? data.question.trim().slice(0, 400) : '';
-      if (!question) return json({ error: 'Please ask a question' }, 400, origin);
+      const question = typeof data.question === 'string' ? data.question : '';
+      if (!question.trim()) return json({ error: 'Please ask a question' }, 400, origin);
+      if (question.length > MAX_MESSAGE_CHARS)
+        return json({ error: `Please keep your message to ${MAX_MESSAGE_CHARS.toLocaleString('en-US')} characters or fewer. Your message was not sent to Emily.` }, 400, origin);
       try {
         const result = await env.AI.run(CHAT_MODEL, { messages: [
           { role: 'system', content: INSTRUCTIONS }, ...historyOf(data.history), { role: 'user', content: question },
