@@ -1,7 +1,7 @@
 // Cloudflare Worker module. Bind Workers AI as AI; no browser API keys.
 const PAGE = 'https://happycow1002.github.io/meet-emily-dickinson/';
 const ORIGIN = new URL(PAGE).origin;
-const CHAT_MODEL = '@cf/meta/llama-3.1-8b-instruct-fast';
+const CHAT_MODEL = '@cf/meta/llama-3.2-3b-instruct';
 const VOICE_MODEL = '@cf/deepgram/aura-2-en';
 const limits = new Map(); // Best-effort per-isolate throttling, not a billing cap.
 
@@ -71,7 +71,7 @@ export default {
     }
     if (request.method === 'GET' && path === '/api/status') {
       const ready = typeof env?.AI?.run === 'function';
-      return json({ service: 'emily-poetry-ai', version: '2026-11-04.1',
+      return json({ service: 'emily-poetry-ai', version: '2026-11-04.2',
         status: ready ? 'ready' : 'ai-binding-missing', chat: 'live', voice: 'natural',
         note: 'Readiness checks configuration; an AI request can still fail.' }, ready ? 200 : 503, origin);
     }

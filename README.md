@@ -20,7 +20,7 @@ Deploy the Worker as an **ES module**, with a Workers AI binding named **AI**. T
 
 ## Runtime and privacy
 
-The Worker calls Cloudflare Workers AI with `@cf/meta/llama-3.1-8b-instruct-fast` for chat and `@cf/deepgram/aura-2-en`, speaker `asteria`, for speech. Cloudflare usage allowances and account/model availability apply; this is not a promise of unlimited free voice. Check the Cloudflare account's plan and AI usage before classroom-wide use. The code does not upgrade a plan or purchase credits.
+The Worker calls Cloudflare Workers AI with `@cf/meta/llama-3.2-3b-instruct` for chat and `@cf/deepgram/aura-2-en`, speaker `asteria`, for speech. Cloudflare usage allowances and account/model availability apply; this is not a promise of unlimited free voice. Check the Cloudflare account's plan and AI usage before classroom-wide use. The code does not upgrade a plan or purchase credits.
 
 Conversation history lives only in page memory. The Worker does not store transcripts or log question content. Questions and recent context are processed by Cloudflare AI, speech text is sent to Cloudflare for audio generation, and microphone transcription uses the browser vendor's speech service. Provider data policies still apply. Students should avoid entering private information.
 
